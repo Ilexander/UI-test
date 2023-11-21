@@ -1,10 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
-
-Vue.config.productionTip = false;
+import "./assets/main.css";
+import "./misc/core-components.js";
+import("preline");
 
 new Vue({
-  render: function (h) {
-    return h(App);
-  },
+  render: (h) => h(App),
 }).$mount("#app");
