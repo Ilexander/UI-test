@@ -1,11 +1,18 @@
-import VsInput from "@/components/vs-input.vue";
-import VsCheckbox from "@/components/vs-checkbox.vue";
+import components from "@/misc/import-file.js";
 
-const components = {
-  VsCheckbox,
-  VsInput,
+const install = (Vue) => {
+  Object.entries(components).forEach((component) => {
+    const [name, path] = component;
+
+    Vue.component(name, path);
+  });
 };
 
-window.vstComponents = components;
+const library = {
+  components,
+  install
+};
 
-export default components;
+window.vstComponents = library;
+
+export default library;

@@ -1,4 +1,4 @@
 export default {
-  VsInput: () => import("@/components/text/vs-input.vue"),
-  VsCheckbox: () => import("@/components/checkbox/vs-checkbox.vue"),
+  VsInput: () => import("@/components/vs-input.vue"),
+  VsCheckbox: () => import("@/components/vs-checkbox.vue"),
 };
