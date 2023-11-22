@@ -1,14 +1,18 @@
 <template>
   <div id="app">
     <main>
-      <!-- <VsInput class="mb-2" /> -->
-      <!-- <VsCheckbox /> -->
+      <VsInput class="mb-2" />
+      <VsCheckbox />
     </main>
   </div>
 </template>
 
 <script>
-export default {};
+import components from "./misc/import-file.js";
+
+export default {
+  components,
+};
 </script>
 
 <style scoped>
