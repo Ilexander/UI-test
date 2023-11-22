@@ -40,12 +40,10 @@
     <script src="https://ilexander.github.io/UI-test/src/softpro-ui-kit.umd.min.js"></script>
 
     <script>
+      vstComponents.install(Vue);
+
       new Vue({
         el: "#app",
-        components: {
-          "vs-input": vstComponents.components.VsInput,
-          "vs-checkbox": vstComponents.components.VsCheckbox,
-        },
         template: `<div>
             <vs-input class='!w-1/4 mb-2' />
             <vs-checkbox class='!w-1/4' />
